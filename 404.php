@@ -38,34 +38,6 @@ include 'partials/header.php';
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="mt-5">
-                        <img src="img/404-sivu.webp" alt="Hämmentynyt henkilö etsii oikeaa sivua tietokoneelta" class="responsive-image" style="max-width: 400px;" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="search-help section-padding bg-surface">
-    <div class="container">
-        <div class="text-center fade-in-section">
-            <h3>Voit myös kokeilla hakua</h3>
-            <p class="mb-4">Anna hakusana löytääksesi etsimäsi sisällön</p>
-            <div class="search-form-container">
-                <form class="search-form" onsubmit="performSearch(event)">
-                    <div class="input-group">
-                        <input type="text" class="form-control form-control-lg" placeholder="Hae sivustolta..." id="search-input">
-                        <button class="btn btn-primary" type="submit">Hae</button>
-                    </div>
-                </form>
-                <div class="search-suggestions mt-3">
-                    <p class="small text-muted">Suositukset: 
-                        <a href="services.php?search=crm" class="text-decoration-none">CRM</a>, 
-                        <a href="services.php?search=puhelinkeskus" class="text-decoration-none">puhelinkeskus</a>, 
-                        <a href="services.php?search=asiakaspalaute" class="text-decoration-none">asiakaspalaute</a>
-                    </p>
                 </div>
             </div>
         </div>
@@ -128,19 +100,6 @@ include 'partials/header.php';
     text-decoration: underline;
 }
 
-.search-form-container {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.search-suggestions a {
-    color: var(--primary);
-    margin: 0 0.5rem;
-}
-
-.search-suggestions a:hover {
-    color: var(--accent);
-}
 
 @media (max-width: 768px) {
     .error-number {
@@ -166,44 +125,5 @@ include 'partials/header.php';
     }
 }
 </style>
-
-<script>
-function performSearch(event) {
-    event.preventDefault();
-    const searchTerm = document.getElementById('search-input').value.toLowerCase();
-    
-    // Simple client-side search logic
-    const searchMappings = {
-        'crm': 'services.php#crm',
-        'puhelinkeskus': 'services.php#call-center',
-        'asiakaspalaute': 'services.php#analytics',
-        'analytics': 'services.php#analytics',
-        'hinta': 'services.php#pricing',
-        'yhteystiedot': 'contact.php',
-        'ota yhteyttä': 'contact.php',
-        'palvelut': 'services.php',
-        'tietoa': 'about.php',
-        'kokemukset': 'testimonials.php',
-        'kysymykset': 'faq.php',
-        'uutiskirje': 'index.php#footer'
-    };
-    
-    // Find matching page
-    let targetPage = null;
-    for (const [key, page] of Object.entries(searchMappings)) {
-        if (searchTerm.includes(key)) {
-            targetPage = page;
-            break;
-        }
-    }
-    
-    if (targetPage) {
-        window.location.href = targetPage;
-    } else {
-        // Default to services page
-        window.location.href = 'services.php?search=' + encodeURIComponent(searchTerm);
-    }
-}
-</script>
 
 <?php include 'partials/footer.php'; ?>
