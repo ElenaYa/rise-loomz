@@ -38,6 +38,8 @@ include_once 'config.php';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
 </head>
 <body>
     <!-- Scroll Progress Bar -->
@@ -48,11 +50,12 @@ include_once 'config.php';
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.php">
-                    <strong><?php echo htmlspecialchars($site_config['company_name']); ?></strong>
+                    <img src="img/logo-header.png" alt="<?php echo htmlspecialchars($site_config['company_name']); ?>" class="navbar-logo">
                 </a>
                 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Avaa navigaatio">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Avaa navigaatio">
+                    <span class="icon-burger" aria-hidden="true"><span class="bar"></span></span>
+                    <span class="icon-close" aria-hidden="true"></span>
                 </button>
                 
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -84,9 +87,6 @@ include_once 'config.php';
                             <a class="nav-link" href="faq.php">UKK</a>
                         </li>
                     </ul>
-                    <div class="ms-3">
-                        <a href="contact.php" class="btn btn-primary">Pyydä arviointi</a>
-                    </div>
                 </div>
             </div>
         </nav>

@@ -6,7 +6,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
-                    <h5><?php echo htmlspecialchars($site_config['company_name']); ?></h5>
+                    <h5 class="visually-hidden"><?php echo htmlspecialchars($site_config['company_name']); ?></h5>
+                    <img src="img/logo-footer.png" alt="<?php echo htmlspecialchars($site_config['company_name']); ?>" class="footer-logo mb-3">
                     <p class="text-muted">Asiakaspalvelukonsultoinnin asiantuntijat. Autamme yrityksiä parantamaan asiakaskokemusta ja optimoimaan palveluprosesseja.</p>
                     <div class="contact-info">
                         <p><strong>Sähköposti:</strong> <a href="mailto:<?php echo $site_config['email']; ?>"><?php echo $site_config['email']; ?></a></p>
