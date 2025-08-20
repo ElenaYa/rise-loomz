@@ -498,6 +498,27 @@ body {
     line-height: 1.6;
 }
 
+/* Colored check bullets for Additional Services lists */
+.additional-services .service-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+.additional-services .service-card ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.35rem;
+}
+.additional-services .service-card ul li::before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    font-weight: 700;
+}
+.additional-services .service-card:nth-child(3n+1) ul li::before { color: var(--primary); }
+.additional-services .service-card:nth-child(3n+2) ul li::before { color: var(--accent); }
+.additional-services .service-card:nth-child(3n+3) ul li::before { color: var(--support); }
+
 /* Stats Grid */
 .stats-grid {
     display: grid;
@@ -645,6 +666,68 @@ body {
     font-weight: 600;
     color: var(--dark);
     margin-bottom: 1rem;
+}
+
+/* Journey Mapping (services.php) timeline step numbers */
+.service-detail .process-timeline {
+    counter-reset: jmStep;
+}
+
+.service-detail .process-step {
+    position: relative;
+}
+
+@media (min-width: 992px) {
+    .service-detail .process-step::after {
+        counter-increment: jmStep;
+        content: counter(jmStep);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--primary), var(--accent));
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        z-index: 2;
+    }
+    .service-detail .process-step:nth-child(odd)::after { right: -40px; }
+    .service-detail .process-step:nth-child(even)::after { left: -40px; }
+}
+
+@media (max-width: 991.98px) {
+    .service-detail .process-timeline::before {
+        left: 30px;
+        transform: translateX(0);
+    }
+    .service-detail .process-step {
+        flex-direction: row !important;
+        padding-left: 80px;
+    }
+    .service-detail .process-step::after {
+        counter-increment: jmStep;
+        content: counter(jmStep);
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        transform: translate(-50%, -50%);
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--primary), var(--accent));
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.125rem;
+        font-weight: 700;
+        z-index: 2;
+    }
 }
 
 /* Feature Cards */

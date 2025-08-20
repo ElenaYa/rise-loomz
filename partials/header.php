@@ -76,6 +76,7 @@ include_once 'config.php';
                                 <li><a class="dropdown-item" href="services.php#call-center">Puhelinkeskusoptimointi</a></li>
                                 <li><a class="dropdown-item" href="services.php#crm">CRM-ratkaisut</a></li>
                                 <li><a class="dropdown-item" href="services.php#analytics">Asiakaspalaute-analytiikka</a></li>
+                                <li><a class="dropdown-item" href="services.php#journey-mapping">Asiakaspolun kartoitus</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
