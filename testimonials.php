@@ -197,6 +197,9 @@ include 'partials/header.php';
                 <p class="section-description">
                     Asiakkaidemme saavuttamat tulokset kertovat onnistumisistamme konkreettisesti
                 </p>
+                <p class="section-description">
+                    Olemme auttaneet asiakkaitamme saavuttamaan merkittäviä parannuksia kaikilla asiakaspalvelun osa-alueilla. Tulokset näkyvät niin asiakastyytyväisyydessä, operatiivisessa tehokkuudessa kuin henkilöstön hyvinvoinnissakin.
+                </p>
                 <img src="img/tulokset-graafit.webp" alt="Graafit näyttävät asiakaspalvelun kehitystä ennen ja jälkeen konsultoinnin" class="responsive-image" loading="lazy">
             </div>
             <div class="col-lg-6">
@@ -302,7 +305,7 @@ include 'partials/header.php';
         <div class="row">
             <div class="col-lg-4 mb-4 fade-in-section">
                 <div class="industry-card">
-                    <div class="industry-icon">💻</div>
+                    <div class="industry-icon"><i class="bi bi-laptop"></i></div>
                     <h5>Teknologia & SaaS</h5>
                     <div class="industry-stats">
                         <span>15+ projektia</span>
@@ -314,7 +317,7 @@ include 'partials/header.php';
             
             <div class="col-lg-4 mb-4 fade-in-section">
                 <div class="industry-card">
-                    <div class="industry-icon">🏪</div>
+                    <div class="industry-icon"><i class="bi bi-shop"></i></div>
                     <h5>Vähittäiskauppa & E-commerce</h5>
                     <div class="industry-stats">
                         <span>25+ projektia</span>
@@ -326,7 +329,7 @@ include 'partials/header.php';
             
             <div class="col-lg-4 mb-4 fade-in-section">
                 <div class="industry-card">
-                    <div class="industry-icon">🏦</div>
+                    <div class="industry-icon"><i class="bi bi-bank2"></i></div>
                     <h5>Finanssipalvelut</h5>
                     <div class="industry-stats">
                         <span>12+ projektia</span>
@@ -408,7 +411,7 @@ include 'partials/header.php';
 
 .case-study-image {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -419,6 +422,26 @@ include 'partials/header.php';
 .case-study-content h4 {
     color: var(--primary);
     margin-bottom: 1rem;
+}
+
+/* Accent check bullets for case study result lists */
+.case-study-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+}
+.case-study-content ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.35rem;
+}
+.case-study-content ul li::before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    color: var(--accent);
+    font-weight: 700;
 }
 
 .industry-card {
