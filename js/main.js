@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Respect reduced motion preference
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    // Header scroll effect
     const header = document.getElementById('main-header');
     const scrollProgress = document.getElementById('scroll-progress');
     
@@ -25,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', updateHeader);
 
-    // Intersection Observer for fade-in animations
     if (!prefersReducedMotion) {
         const observerOptions = {
             threshold: 0.1,
@@ -40,18 +37,15 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }, observerOptions);
 
-        // Observe all fade-in sections
         document.querySelectorAll('.fade-in-section').forEach(section => {
             observer.observe(section);
         });
     } else {
-        // If reduced motion is preferred, show all sections immediately
         document.querySelectorAll('.fade-in-section').forEach(section => {
             section.classList.add('visible');
         });
     }
 
-    // Cookie consent functionality
     const cookieBanner = document.getElementById('cookie-banner');
     const acceptCookiesBtn = document.getElementById('accept-cookies');
     const rejectCookiesBtn = document.getElementById('reject-cookies');
@@ -64,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
         cookieModal = new bootstrap.Modal(cookieModalElement);
     }
 
-    // Check if user has already made a choice
     function checkCookieConsent() {
         const consent = localStorage.getItem('cookie-consent');
         if (!consent && cookieBanner) {
@@ -76,14 +69,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Save cookie preferences
     function saveCookiePreferences(preferences) {
         const consentData = {
             essential: true,
             analytics: preferences.analytics || false,
             marketing: preferences.marketing || false,
             timestamp: Date.now(),
-            expires: Date.now() + (365 * 24 * 60 * 60 * 1000) // 1 year
+            expires: Date.now() + (365 * 24 * 60 * 60 * 1000) 
         };
         
         localStorage.setItem('cookie-consent', JSON.stringify(consentData));
@@ -93,20 +85,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Load scripts based on consent
     function loadConsentedScripts(consent) {
         if (consent.analytics) {
-            // Load analytics scripts here
-            console.log('Analytics cookies accepted');
         }
         
         if (consent.marketing) {
-            // Load marketing scripts here
-            console.log('Marketing cookies accepted');
         }
     }
 
-    // Event listeners for cookie buttons
     if (acceptCookiesBtn) {
         acceptCookiesBtn.addEventListener('click', () => {
             saveCookiePreferences({ analytics: true, marketing: true });
@@ -139,7 +125,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Newsletter form submission (client-side only)
     const newsletterForm = document.getElementById('newsletter-form');
     const newsletterMessage = document.getElementById('newsletter-message');
 
@@ -161,13 +146,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            // Simulate successful submission
             showMessage('Kiitos! Olet nyt tilannut uutiskirjeemme.', 'success');
             newsletterForm.reset();
         });
     }
 
-    // Contact form submission (client-side only)
     const contactForm = document.getElementById('contact-form');
     
     if (contactForm) {
@@ -182,7 +165,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalText = submitBtn.textContent;
             
-            // Validation
             let errors = [];
             
             if (!email || !isValidEmail(email)) {
@@ -206,11 +188,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            // Show loading state
             submitBtn.disabled = true;
             submitBtn.textContent = 'Lähetetään...';
             
-            // Simulate submission
             setTimeout(() => {
                 showContactMessage('Kiitos yhteydenotostasi! Vastaamme sinulle pian.', 'success');
                 contactForm.reset();
@@ -248,7 +228,6 @@ document.addEventListener('DOMContentLoaded', function() {
         return emailRegex.test(email);
     }
 
-    // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -265,16 +244,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Initialize tooltips
     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
 
-    // Initialize cookie consent check
     checkCookieConsent();
 
-    // Active navigation link highlighting
     function setActiveNavLink() {
         const currentPage = window.location.pathname.split('/').pop() || 'index.php';
         const navLinks = document.querySelectorAll('.nav-link');
@@ -289,7 +265,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setActiveNavLink();
 
-    // Lazy loading for images
     if ('IntersectionObserver' in window) {
         const imageObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
@@ -309,10 +284,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Keyboard navigation improvements
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') {
-            // Close any open modals
             const openModals = document.querySelectorAll('.modal.show');
             openModals.forEach(modal => {
                 const modalInstance = bootstrap.Modal.getInstance(modal);
@@ -323,7 +296,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Performance optimization: debounce scroll events
     let scrollTimeout;
     function debounceScroll() {
         if (scrollTimeout) {

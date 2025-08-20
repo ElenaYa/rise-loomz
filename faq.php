@@ -3,7 +3,6 @@ include_once 'config.php';
 include 'partials/header.php';
 ?>
 
-<!-- Page Header -->
 <section class="page-header section-padding">
     <div class="container">
         <div class="row">
@@ -18,7 +17,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Quick Navigation -->
 <section class="faq-navigation section-padding bg-surface">
     <div class="container">
         <div class="text-center mb-4 fade-in-section">
@@ -50,7 +48,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- General Questions -->
 <section class="faq-section section-padding section-full-height" id="general">
     <div class="container">
         <div class="row">
@@ -124,7 +121,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Service Questions -->
 <section class="faq-section section-padding section-full-height bg-surface" id="services">
     <div class="container">
         <div class="row">
@@ -199,7 +195,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Pricing Questions -->
 <section class="faq-section section-padding section-full-height" id="pricing">
     <div class="container">
         <div class="row">
@@ -274,7 +269,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Process Questions -->
 <section class="faq-section section-padding section-full-height bg-surface" id="process">
     <div class="container">
         <div class="row">
@@ -350,7 +344,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Results Questions -->
 <section class="faq-section section-padding section-full-height" id="results">
     <div class="container">
         <div class="row">
@@ -428,7 +421,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Contact CTA -->
 <section class="contact-cta section-padding section-full-height bg-surface">
     <div class="container">
         <div class="text-center fade-in-section">
@@ -495,7 +487,6 @@ include 'partials/header.php';
 </style>
 
 <script>
-// Smooth scrolling for FAQ navigation
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('#faq-nav .nav-link');
     
@@ -503,13 +494,10 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             
-            // Remove active class from all links
             navLinks.forEach(l => l.classList.remove('active'));
             
-            // Add active class to clicked link
             this.classList.add('active');
             
-            // Scroll to target section
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
                 const headerHeight = document.getElementById('main-header').offsetHeight;

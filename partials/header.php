@@ -1,6 +1,5 @@
 <?php
-// partials/header.php
-include_once 'config.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="fi">
@@ -34,7 +33,6 @@ include_once 'config.php';
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://<?php echo $site_config['domain']; ?><?php echo $_SERVER['REQUEST_URI']; ?>">
     
-    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -43,10 +41,8 @@ include_once 'config.php';
     <link rel="apple-touch-icon" href="img/favicon.png">
 </head>
 <body>
-    <!-- Scroll Progress Bar -->
     <div id="scroll-progress" class="scroll-progress"></div>
     
-    <!-- Header -->
     <header id="main-header" class="main-header">
         <nav class="navbar navbar-expand-lg">
             <div class="container">

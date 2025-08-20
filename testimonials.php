@@ -3,7 +3,6 @@ include_once 'config.php';
 include 'partials/header.php';
 ?>
 
-<!-- Page Header -->
 <section class="page-header section-padding">
     <div class="container">
         <div class="row">
@@ -18,7 +17,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Featured Testimonials -->
 <section class="featured-testimonials section-padding section-full-height bg-surface">
     <div class="container">
         <div class="text-center mb-5 fade-in-section">
@@ -78,7 +76,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Testimonials Grid -->
 <section class="testimonials-grid section-padding section-full-height">
     <div class="container">
         <div class="row">
@@ -187,7 +184,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Results Showcase -->
 <section class="results-showcase section-padding section-full-height bg-surface">
     <div class="container">
         <div class="row align-items-center">
@@ -240,7 +236,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Case Studies -->
 <section class="case-studies section-padding section-full-height">
     <div class="container">
         <div class="text-center mb-5 fade-in-section">
@@ -291,7 +286,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Industry Impact -->
 <section class="industry-impact section-padding section-full-height bg-surface">
     <div class="container">
         <div class="text-center mb-5 fade-in-section">
@@ -342,7 +336,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- CTA Section -->
 <section class="cta-section section-padding section-full-height">
     <div class="container">
         <div class="cta-card fade-in-section">
@@ -424,7 +417,6 @@ include 'partials/header.php';
     margin-bottom: 1rem;
 }
 
-/* Accent check bullets for case study result lists */
 .case-study-content ul {
     list-style: none;
     padding-left: 0;

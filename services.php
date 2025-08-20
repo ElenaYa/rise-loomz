@@ -3,7 +3,6 @@ include_once 'config.php';
 include 'partials/header.php';
 ?>
 
-<!-- Page Header -->
 <section class="page-header section-padding">
     <div class="container">
         <div class="row">
@@ -19,7 +18,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Service Overview -->
 <section class="service-overview section-padding section-full-height bg-surface">
     <div class="container">
         <div class="row align-items-center">
@@ -76,7 +74,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Call Center Optimization -->
 <section class="service-detail section-padding section-full-height" id="call-center">
     <div class="container">
         <div class="row align-items-center">
@@ -184,7 +181,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- CRM Solutions -->
 <section class="service-detail section-padding section-full-height bg-surface" id="crm">
     <div class="container">
         <div class="row align-items-center">
@@ -269,7 +265,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Analytics -->
 <section class="service-detail section-padding section-full-height" id="analytics">
     <div class="container">
         <div class="row align-items-center">
@@ -346,7 +341,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Journey Mapping -->
 <section class="service-detail section-padding section-full-height bg-surface" id="journey-mapping">
     <div class="container">
         <div class="row align-items-center">
@@ -434,7 +428,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Additional Services -->
 <section class="additional-services section-padding section-full-height" id="additional-services">
     <div class="container">
         <div class="text-center mb-5 fade-in-section">
@@ -534,7 +527,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Pricing Information -->
 <section class="pricing-info section-padding section-full-height bg-surface">
     <div class="container">
         <div class="row align-items-center">

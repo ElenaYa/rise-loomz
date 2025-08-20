@@ -3,7 +3,6 @@ include_once 'config.php';
 include 'partials/header.php';
 ?>
 
-<!-- Page Header -->
 <section class="page-header section-padding">
     <div class="container">
         <div class="row">
@@ -19,7 +18,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Contact Form Section -->
 <section class="contact-form-section section-padding section-full-height">
     <div class="container">
         <div class="row">
@@ -97,7 +95,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Contact Information -->
 <section class="contact-info section-padding section-full-height bg-surface">
     <div class="container">
         <div class="text-center mb-5 fade-in-section">
@@ -143,7 +140,6 @@ include 'partials/header.php';
         </div>
     </div>
 </section>
-<!-- FAQ Preview -->
 <section class="faq-preview section-padding section-full-height bg-surface">
     <div class="container">
         <div class="text-center mb-5 fade-in-section">

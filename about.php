@@ -3,7 +3,6 @@ include_once 'config.php';
 include 'partials/header.php';
 ?>
 
-<!-- Page Header -->
 <section class="page-header section-padding">
     <div class="container">
         <div class="row">
@@ -19,7 +18,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Our Story Section -->
 <section class="our-story section-padding section-full-height bg-surface">
     <div class="container">
         <div class="row align-items-center">
@@ -47,7 +45,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Company Stats Section -->
 <section class="company-stats section-padding section-full-height">
     <div class="container">
         <div class="row align-items-center">
@@ -132,7 +129,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Our Approach Section -->
 <section class="our-approach section-padding section-full-height bg-surface">
     <div class="container">
         <div class="text-center mb-5 fade-in-section">
@@ -185,7 +181,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Our Values Section -->
 <section class="our-values section-padding section-full-height">
     <div class="container">
         <div class="text-center mb-5 fade-in-section">
@@ -245,7 +240,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Industry Experience Section -->
 <section class="industry-experience section-padding section-full-height bg-surface">
     <div class="container">
         <div class="row align-items-center">
@@ -272,7 +266,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Methodology Section -->
 <section class="methodology section-padding section-full-height">
     <div class="container">
         <div class="text-center mb-5 fade-in-section">
@@ -343,7 +336,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- CTA Section -->
 <section class="cta-section section-padding section-full-height">
     <div class="container">
         <div class="cta-card fade-in-section">

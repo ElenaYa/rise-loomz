@@ -1,7 +1,5 @@
 <?php
-// partials/footer.php
 ?>
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -73,7 +71,6 @@
         </div>
     </footer>
     
-    <!-- Cookie Consent Banner -->
     <div id="cookie-banner" class="cookie-banner" style="display: none;">
         <div class="container">
             <div class="row align-items-center">
@@ -92,7 +89,6 @@
         </div>
     </div>
     
-    <!-- Cookie Settings Modal -->
     <div class="modal fade" id="cookieModal" tabindex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -139,7 +135,6 @@
         </div>
     </div>
     
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>

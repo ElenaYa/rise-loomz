@@ -1,11 +1,9 @@
 <?php
-// config.php
 $domain = 'rise-loomz.com';
 $company_name = 'Rise Loomz Consult Co.';
 $email = 'admin@' . $domain;
-$phone = ''; // No phone numbers as per requirements
+$phone = '';
 
-// Site configuration
 $site_config = [
     'domain' => $domain,
     'company_name' => $company_name,

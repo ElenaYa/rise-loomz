@@ -1,7 +1,6 @@
 <?php
 include_once 'config.php';
 
-// Dynamic meta tags for home page
 $page_title = 'Asiakaspalvelukonsultointi - Parempi asiakaskokemus - ' . $site_config['company_name'];
 $page_description = 'Parannamme asiakaspalveluanne asiantuntevalla konsultoinnilla. Puhelinkeskusoptimointia, asiakaskokemuksen mittausta ja CRM-ratkaisuja Suomessa.';
 $page_keywords = 'asiakaspalvelu konsultointi, puhelinkeskus optimointi, CRM ratkaisut, asiakaskokemus mittaus, palveluprosessit, asiakaspalaute analytiikka';
@@ -9,7 +8,6 @@ $page_keywords = 'asiakaspalvelu konsultointi, puhelinkeskus optimointi, CRM rat
 include 'partials/header.php';
 ?>
 
-<!-- Hero Section - Full Height Cover Card -->
 <section class="hero-section" id="hero">
     <div class="hero-container">
         <div class="hero-card cover-card">
@@ -31,7 +29,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Services Overview Section -->
 <section class="services-overview section-padding section-full-height" id="services-overview">
     <div class="container">
         <div class="row align-items-center">
@@ -105,7 +102,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Stats Section -->
 <section class="stats-section section-padding section-full-height bg-surface" id="stats">
     <div class="container">
         <div class="text-center mb-5 fade-in-section">
@@ -158,7 +154,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Process Section -->
 <section class="process section-padding section-full-height" id="process">
     <div class="container">
         <div class="text-center mb-5 fade-in-section">
@@ -206,7 +201,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Why Choose Us Section -->
 <section class="why-choose-us section-padding section-full-height bg-surface" id="why-choose">
     <div class="container">
         <div class="row align-items-center">
@@ -258,7 +252,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- Features Section -->
 <section class="features section-padding section-full-height" id="features">
     <div class="container">
         <div class="text-center mb-5 fade-in-section">
@@ -337,7 +330,6 @@ include 'partials/header.php';
     </div>
 </section>
 
-<!-- CTA Section -->
 <section class="cta-section section-padding section-full-height" id="cta">
     <div class="container">
         <div class="row align-items-center">
