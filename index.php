@@ -48,28 +48,50 @@ include 'partials/header.php';
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="service-icon">
-                            <div class="icon-bg icon-primary"></div>
+                            <div class="icon-bg icon-primary">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.45 19.45 0 0 1-6-6A19.8 19.8 0 0 1 2.11 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1.01.36 1.99.68 2.94a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.14-1.14a2 2 0 0 1 2.11-.45c.95.32 1.93.55 2.94.68A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
                         </div>
                         <h4>Puhelinkeskusoptimointi</h4>
                         <p>Tehostamme puhelinkeskuksenne toimintaa ja parannamme palvelun laatua.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
-                            <div class="icon-bg icon-accent"></div>
+                            <div class="icon-bg icon-accent">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                    <path d="M21 5v14c0 1.66-4.03 3-9 3s-9-1.34-9-3V5"></path>
+                                    <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"></path>
+                                </svg>
+                            </div>
                         </div>
                         <h4>CRM-järjestelmäratkaisut</h4>
                         <p>Optimoimme asiakashallintajärjestelmänne maksimaalisen hyödyn saavuttamiseksi.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
-                            <div class="icon-bg icon-support"></div>
+                            <div class="icon-bg icon-support">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="6" y1="20" x2="6" y2="16"></line>
+                                    <line x1="12" y1="20" x2="12" y2="10"></line>
+                                    <line x1="18" y1="20" x2="18" y2="4"></line>
+                                </svg>
+                            </div>
                         </div>
                         <h4>Asiakaspalaute-analytiikka</h4>
                         <p>Muutamme asiakaspalautteen toimenpiteiksi data-analytiikan avulla.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
-                            <div class="icon-bg icon-primary"></div>
+                            <div class="icon-bg icon-primary">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                                    <line x1="8" y1="2" x2="8" y2="18"></line>
+                                    <line x1="16" y1="6" x2="16" y2="22"></line>
+                                </svg>
+                            </div>
                         </div>
                         <h4>Asiakaspolun kartoitus</h4>
                         <p>Tunnistamme ja korjaamme asiakaspolun ongelmakohtia.</p>
@@ -192,11 +214,21 @@ include 'partials/header.php';
                 <span class="section-badge">Miksi valita meidät</span>
                 <h2 class="section-title">Kokemusta, asiantuntemusta ja tuloksia</h2>
                 <p class="section-description">
-                    Olemme auttaneet kymmeniä yrityksiä parantamaan asiakaspalveluaan ja saavuttamaan parempia liiketoimintatuloksia.
+                    Olemme auttaneet kymmeniä yrityksiä parantamaan asiakaspalveluaan ja saavuttamaan parempia liiketoimintatuloksia. Pitkä kokemuksemme alalta ja sitoutumisemme asiakkaidemme menestykseen tekee meistä luotettavan kumppanin.
+                </p>
+                <p class="section-description">
+                    Asiantuntijatiimimme koostuu kokeneista ammattilaisista, jotka ovat työskennelleet monipuolisesti eri toimialoilla. Ymmärrämme syvällisesti asiakaspalvelun haasteet ja mahdollisuudet nykypäivän digitaalisessa liiketoimintaympäristössä.
+                </p>
+                <p class="section-description">
+                    Tuloksemme puhuvat puolestaan - asiakkaamme ovat keskimäärin parantaneet asiakastyytyväisyyttään 30% ja tehostaneet palveluprosessejaan merkittävästi. Tarjoamme konkreettisia, mitattavia tuloksia ja pitkäjänteistä kumppanuutta.
                 </p>
             </div>
             <div class="col-lg-6 fade-in-section">
                 <img src="img/konsultointi-kokous.webp" alt="Konsultointikokous, jossa asiantuntijat keskustelevat asiakaspalvelun kehittämisestä" class="responsive-image" loading="lazy">
+                <div class="mt-4 text-center">
+                    <p class="fw-bold">Yli 10 vuoden kokemus</p>
+                    <p class="text-muted">Asiakaspalvelun kehittämisen asiantuntijoina</p>
+                </div>
             </div>
         </div>
         
@@ -239,32 +271,65 @@ include 'partials/header.php';
         
         <div class="feature-grid fade-in-section">
             <div class="feature-card">
-                <div class="feature-icon">📊</div>
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="6" y1="20" x2="6" y2="12"/>
+                        <line x1="12" y1="20" x2="12" y2="8"/>
+                        <line x1="18" y1="20" x2="18" y2="4"/>
+                    </svg>
+                </div>
                 <h4>Data-analytiikka</h4>
                 <p>Hyödynnämme kehittynyttä analytiikkaa asiakaspalvelun mittaamisessa ja optimoinnissa. Saamme esiin piilevät ongelmat ja mahdollisuudet.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🎯</div>
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="8"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <line x1="22" y1="2" x2="16" y2="8"/>
+                        <polyline points="22 2 15 3 16 8"/>
+                    </svg>
+                </div>
                 <h4>Toimialaosaaminen</h4>
                 <p>Meillä on syvä ymmärrys eri toimialojen erityispiirteistä ja asiakaspalvelun haasteista teknologiasta kaupankauppaan.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🚀</div>
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M16 12l-4-4-4 4"/>
+                        <path d="M12 16V8"/>
+                        <path d="M8 16h8"/>
+                    </svg>
+                </div>
                 <h4>Innovatiiviset ratkaisut</h4>
                 <p>Tuomme uusimmat teknologiat ja trendit asiakaspalveluun, kuten tekoälyn ja automaation hyödyntämisen.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🤝</div>
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                </div>
                 <h4>Kumppanuus</h4>
                 <p>Emme ole vain konsultteja vaan kumppaneitanne pitkällä aikavälillä. Menestymisenne on meidän menestymistämme.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">⚡</div>
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                    </svg>
+                </div>
                 <h4>Nopeat tulokset</h4>
                 <p>Vaikka rakennamme kestäviä ratkaisuja, ensimmäiset parannukset näkyvät usein jo muutamassa viikossa.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🎓</div>
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10L12 5 2 10l10 5 10-5z"/>
+                        <path d="M6 12v5c0 .7 2.7 2 6 2s6-1.3 6-2v-5"/>
+                    </svg>
+                </div>
                 <h4>Koulutus ja kehitys</h4>
                 <p>Koulutamme tiimenne käyttämään uusia työkaluja ja menetelmiä, jotta hyöty säilyy pitkään.</p>
             </div>

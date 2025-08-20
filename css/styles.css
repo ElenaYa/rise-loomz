@@ -464,6 +464,16 @@ body {
     position: relative;
 }
 
+.icon-bg .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.25rem;
+    width: 28px;
+    height: 28px;
+}
+
 .icon-primary { background: linear-gradient(135deg, var(--primary), #4C63D2); }
 .icon-accent { background: linear-gradient(135deg, var(--accent), #FF6B6B); }
 .icon-support { background: linear-gradient(135deg, var(--support), #00D2A7); }
@@ -538,6 +548,7 @@ body {
     width: 2px;
     background: linear-gradient(180deg, var(--primary), var(--accent));
     transform: translateX(-50%);
+    z-index: 0;
 }
 
 .process-step {
@@ -576,6 +587,43 @@ body {
     max-width: 400px;
 }
 
+/* Desktop layout for process timeline */
+@media (min-width: 992px) {
+    .process-step {
+        width: 50%;
+        margin-bottom: 3rem;
+    }
+    .process-step .step-content {
+        max-width: none;
+        position: relative;
+        z-index: 1;
+    }
+    .process-step:nth-child(odd) {
+        margin-right: auto;
+        padding-right: 80px;
+        flex-direction: row;
+        text-align: right;
+    }
+    .process-step:nth-child(even) {
+        margin-left: auto;
+        padding-left: 80px;
+        flex-direction: row-reverse;
+        text-align: left;
+    }
+    .step-number {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+    .process-step:nth-child(odd) .step-number {
+        right: -40px;
+    }
+    .process-step:nth-child(even) .step-number {
+        left: -40px;
+    }
+}
+
 .step-content h4 {
     font-size: 1.25rem;
     font-weight: 600;
@@ -586,7 +634,7 @@ body {
 /* Feature Cards */
 .feature-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
 }
 
@@ -624,6 +672,11 @@ body {
     justify-content: center;
     color: var(--white);
     font-size: 2rem;
+}
+
+.feature-icon svg {
+    width: 36px;
+    height: 36px;
 }
 
 .feature-card h4 {
@@ -810,6 +863,13 @@ body {
     margin-bottom: 0.5rem;
 }
 
+/* Ensure readable muted/small texts on dark footer */
+.footer .text-muted,
+.footer small,
+.footer .small {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
 /* Newsletter Form */
 .newsletter-form .form-control {
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -903,7 +963,7 @@ body {
 
 /* Page Header */
 .page-header {
-    background: linear-gradient(135deg, var(--primary) 0%, #4C63D2 100%);
+    background: url('../img/hero-bg-for-pages.webp') center/cover no-repeat;
     color: var(--white);
     position: relative;
     overflow: hidden;
@@ -919,8 +979,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" patternUnits="userSpaceOnUse" width="100" height="100"><circle cx="50" cy="50" r="0.5" fill="white" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-    opacity: 0.6;
+    background: rgba(0, 0, 0, 0.25);
 }
 
 .page-header .section-badge {
@@ -1023,6 +1082,9 @@ body {
     .hero-title {
         font-size: 2.5rem;
     }
+    .scroll-indicator {
+        display: none;
+    }
     
     .hero-description {
         font-size: 1.125rem;
@@ -1100,6 +1162,10 @@ body {
 @media (max-width: 576px) {
     .hero-section {
         padding-top: 6.5rem;
+    }
+    /* Push section-badge below fixed header on small screens */
+    .page-header .section-badge {
+        margin-top: 3rem;
     }
     .hero-title {
         font-size: 1.75rem;
