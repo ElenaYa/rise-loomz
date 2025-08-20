@@ -394,7 +394,6 @@ body {
 }
 
 .section-full-height {
-    min-height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -474,6 +473,15 @@ body {
     height: 28px;
 }
 
+/* Bootstrap Icons alignment inside icon-bg */
+.icon-bg .bi {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.25rem;
+}
+
 .icon-primary { background: linear-gradient(135deg, var(--primary), #4C63D2); }
 .icon-accent { background: linear-gradient(135deg, var(--accent), #FF6B6B); }
 .icon-support { background: linear-gradient(135deg, var(--support), #00D2A7); }
@@ -531,6 +539,14 @@ body {
 .stat-description {
     color: var(--dark);
     font-size: 0.875rem;
+}
+
+/* Prevent icon circles from shrinking in Company Stats list */
+.company-stats .d-flex .feature-icon {
+    flex: 0 0 50px;
+    min-width: 50px;
+    min-height: 50px;
+    flex-shrink: 0;
 }
 
 /* Process Timeline */
@@ -691,6 +707,41 @@ body {
     text-align: center;
     padding: 2rem;
     height: 100%;
+}
+
+/* Our Values styling */
+.our-values .value-card {
+    background: var(--white);
+    border-radius: var(--border-radius-sm);
+    box-shadow: 0 4px 20px var(--shadow);
+    padding: 1.75rem;
+    height: 100%;
+    transition: var(--transition);
+    border-top: 4px solid var(--primary);
+}
+
+.our-values .value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px var(--shadow-lg);
+}
+
+.our-values .value-card h5 {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.our-values .feature-icon {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: var(--white);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-values .feature-icon .bi {
+    font-size: 1.5rem;
 }
 
 .benefit-number {
@@ -1057,6 +1108,10 @@ body {
     color: var(--white);
     margin: 0 auto 1rem;
     font-size: 1.5rem;
+}
+
+.diagram-icon .bi {
+    font-size: 1.25rem;
 }
 
 /* Focus States for Accessibility */

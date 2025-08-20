@@ -60,7 +60,9 @@ include 'partials/header.php';
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <div class="d-flex align-items-center">
-                            <div class="feature-icon me-3" style="width: 50px; height: 50px; font-size: 1.5rem;">📈</div>
+                            <div class="feature-icon me-3" style="width: 50px; height: 50px; font-size: 1.5rem;">
+                                <i class="bi bi-graph-up"></i>
+                            </div>
                             <div>
                                 <h5 class="mb-1">Jatkuva kasvu</h5>
                                 <p class="mb-0 text-muted">Liikevaihto kasvanut 40% vuosittain</p>
@@ -69,7 +71,9 @@ include 'partials/header.php';
                     </div>
                     <div class="col-md-6 mb-3">
                         <div class="d-flex align-items-center">
-                            <div class="feature-icon me-3" style="width: 50px; height: 50px; font-size: 1.5rem;">🎯</div>
+                            <div class="feature-icon me-3" style="width: 50px; height: 50px; font-size: 1.5rem;">
+                                <i class="bi bi-bullseye"></i>
+                            </div>
                             <div>
                                 <h5 class="mb-1">Tehokkuus</h5>
                                 <p class="mb-0 text-muted">Keskimäärin 6 kuukauden ROI</p>
@@ -78,7 +82,9 @@ include 'partials/header.php';
                     </div>
                     <div class="col-md-6 mb-3">
                         <div class="d-flex align-items-center">
-                            <div class="feature-icon me-3" style="width: 50px; height: 50px; font-size: 1.5rem;">🏆</div>
+                            <div class="feature-icon me-3" style="width: 50px; height: 50px; font-size: 1.5rem;">
+                                <i class="bi bi-trophy"></i>
+                            </div>
                             <div>
                                 <h5 class="mb-1">Laatu</h5>
                                 <p class="mb-0 text-muted">100% projektien on-time valmistuminen</p>
@@ -87,7 +93,9 @@ include 'partials/header.php';
                     </div>
                     <div class="col-md-6 mb-3">
                         <div class="d-flex align-items-center">
-                            <div class="feature-icon me-3" style="width: 50px; height: 50px; font-size: 1.5rem;">🤝</div>
+                            <div class="feature-icon me-3" style="width: 50px; height: 50px; font-size: 1.5rem;">
+                                <i class="bi bi-people"></i>
+                            </div>
                             <div>
                                 <h5 class="mb-1">Luottamus</h5>
                                 <p class="mb-0 text-muted">85% asiakkaista jatkaa yhteistyötä</p>
@@ -98,22 +106,22 @@ include 'partials/header.php';
             </div>
             <div class="col-lg-6">
                 <div class="stats-grid fade-in-section">
-                    <div class="stat-item">
+                    <div class="stat-item hover-animate">
                         <div class="stat-number">200+</div>
                         <div class="stat-label">Onnistunutta projektia</div>
                         <div class="stat-description">Toteutettuja asiakaspalvelun parantamisprojekteja</div>
                     </div>
-                    <div class="stat-item">
+                    <div class="stat-item hover-animate">
                         <div class="stat-number">15+</div>
                         <div class="stat-label">Vuotta kokemusta</div>
                         <div class="stat-description">Asiakaspalvelukonsultoinnin parissa</div>
                     </div>
-                    <div class="stat-item">
+                    <div class="stat-item hover-animate">
                         <div class="stat-number">95%</div>
                         <div class="stat-label">Asiakastyytyväisyys</div>
                         <div class="stat-description">Tyytyväisiä asiakkaita palveluumme</div>
                     </div>
-                    <div class="stat-item">
+                    <div class="stat-item hover-animate">
                         <div class="stat-number">50+</div>
                         <div class="stat-label">Toimialaa</div>
                         <div class="stat-description">Kokemusta eri liiketoiminta-aloilta</div>
@@ -143,7 +151,7 @@ include 'partials/header.php';
                 <div class="approach-cards">
                     <div class="approach-card fade-in-section">
                         <div class="approach-icon">
-                            <div class="icon-bg icon-primary"></div>
+                            <div class="icon-bg icon-primary"><i class="bi bi-graph-up"></i></div>
                         </div>
                         <h4>Datan ohjaamaa päätöksentekoa</h4>
                         <p>
@@ -153,7 +161,7 @@ include 'partials/header.php';
                     </div>
                     <div class="approach-card fade-in-section">
                         <div class="approach-icon">
-                            <div class="icon-bg icon-accent"></div>
+                            <div class="icon-bg icon-accent"><i class="bi bi-diagram-3"></i></div>
                         </div>
                         <h4>Kokonaisvaltainen näkökulma</h4>
                         <p>
@@ -163,7 +171,7 @@ include 'partials/header.php';
                     </div>
                     <div class="approach-card fade-in-section">
                         <div class="approach-icon">
-                            <div class="icon-bg icon-support"></div>
+                            <div class="icon-bg icon-support"><i class="bi bi-gear"></i></div>
                         </div>
                         <h4>Kestävät muutokset</h4>
                         <p>
@@ -192,7 +200,9 @@ include 'partials/header.php';
             <div class="col-lg-3 col-md-6 mb-4 fade-in-section">
                 <div class="value-card">
                     <div class="text-center mb-3">
-                        <div class="feature-icon mx-auto" style="width: 60px; height: 60px;">🔍</div>
+                        <div class="feature-icon mx-auto" style="width: 60px; height: 60px;">
+                            <i class="bi bi-search"></i>
+                        </div>
                     </div>
                     <h5>Läpinäkyvyys</h5>
                     <p>Toimimme avoimesti ja raportoimme tulokset rehellisesti. Asiakkaamme tietävät aina, mitä teemme ja miksi.</p>
@@ -201,7 +211,9 @@ include 'partials/header.php';
             <div class="col-lg-3 col-md-6 mb-4 fade-in-section">
                 <div class="value-card">
                     <div class="text-center mb-3">
-                        <div class="feature-icon mx-auto" style="width: 60px; height: 60px;">❤️</div>
+                        <div class="feature-icon mx-auto" style="width: 60px; height: 60px;">
+                            <i class="bi bi-heart"></i>
+                        </div>
                     </div>
                     <h5>Asiakaskeskeisyys</h5>
                     <p>Asetamme asiakkaidemme tarpeet ja tavoitteet etusijalle. Heidän menestyksensä on meidän menestystämme.</p>
@@ -210,7 +222,9 @@ include 'partials/header.php';
             <div class="col-lg-3 col-md-6 mb-4 fade-in-section">
                 <div class="value-card">
                     <div class="text-center mb-3">
-                        <div class="feature-icon mx-auto" style="width: 60px; height: 60px;">📚</div>
+                        <div class="feature-icon mx-auto" style="width: 60px; height: 60px;">
+                            <i class="bi bi-journal-text"></i>
+                        </div>
                     </div>
                     <h5>Jatkuva oppiminen</h5>
                     <p>Pysymme ajan tasalla uusimmista trendeistä ja teknologioista varmistaaksemme parhaan osaamisen.</p>
@@ -219,7 +233,9 @@ include 'partials/header.php';
             <div class="col-lg-3 col-md-6 mb-4 fade-in-section">
                 <div class="value-card">
                     <div class="text-center mb-3">
-                        <div class="feature-icon mx-auto" style="width: 60px; height: 60px;">🎯</div>
+                        <div class="feature-icon mx-auto" style="width: 60px; height: 60px;">
+                            <i class="bi bi-bullseye"></i>
+                        </div>
                     </div>
                     <h5>Tuloksellisuus</h5>
                     <p>Keskitymme saavuttamaan mitattavia ja merkityksellisiä tuloksia, jotka vaikuttavat todella liiketoimintaan.</p>
@@ -273,28 +289,28 @@ include 'partials/header.php';
                     <div class="row text-center">
                         <div class="col-md-3 mb-4">
                             <div class="diagram-step">
-                                <div class="diagram-icon">📊</div>
+                                <div class="diagram-icon"><i class="bi bi-graph-up"></i></div>
                                 <h5>Analysointi</h5>
                                 <p class="small">Syvä nykytilan kartoitus</p>
                             </div>
                         </div>
                         <div class="col-md-3 mb-4">
                             <div class="diagram-step">
-                                <div class="diagram-icon">🎯</div>
+                                <div class="diagram-icon"><i class="bi bi-bullseye"></i></div>
                                 <h5>Strategia</h5>
                                 <p class="small">Räätälöity toimintasuunnitelma</p>
                             </div>
                         </div>
                         <div class="col-md-3 mb-4">
                             <div class="diagram-step">
-                                <div class="diagram-icon">⚙️</div>
+                                <div class="diagram-icon"><i class="bi bi-gear"></i></div>
                                 <h5>Toteutus</h5>
                                 <p class="small">Vaiheittainen implementointi</p>
                             </div>
                         </div>
                         <div class="col-md-3 mb-4">
                             <div class="diagram-step">
-                                <div class="diagram-icon">📈</div>
+                                <div class="diagram-icon"><i class="bi bi-graph-up-arrow"></i></div>
                                 <h5>Optimointi</h5>
                                 <p class="small">Jatkuva parantaminen</p>
                             </div>
@@ -307,19 +323,19 @@ include 'partials/header.php';
         <div class="row mt-5">
             <div class="col-lg-4 mb-4 fade-in-section">
                 <div class="methodology-card">
-                    <h5>🔬 Tutkimuspohjainen</h5>
+                    <h5><i class="bi bi-search me-2"></i>Tutkimuspohjainen</h5>
                     <p>Kaikki suosituksemme perustuvat alan tutkimukseen ja parhaaseen saatavilla olevaan tietoon asiakaspalvelun optimoinnista.</p>
                 </div>
             </div>
             <div class="col-lg-4 mb-4 fade-in-section">
                 <div class="methodology-card">
-                    <h5>🤖 Teknologia-avusteinen</h5>
+                    <h5><i class="bi bi-cpu me-2"></i>Teknologia-avusteinen</h5>
                     <p>Hyödynnämme uusimpia työkaluja kuten tekoälyä, automatiikkaa ja kehittynyttä analytiikkaa tehostamaan prosesseja.</p>
                 </div>
             </div>
             <div class="col-lg-4 mb-4 fade-in-section">
                 <div class="methodology-card">
-                    <h5>👥 Ihmiskeskeinen</h5>
+                    <h5><i class="bi bi-people me-2"></i>Ihmiskeskeinen</h5>
                     <p>Teknologian ohella keskitymme ihmisten hyvinvointiin - sekä asiakkaiden että työntekijöiden kokemukseen.</p>
                 </div>
             </div>
