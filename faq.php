@@ -54,10 +54,7 @@ include 'partials/header.php';
 <section class="faq-section section-padding section-full-height" id="general">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 fade-in-section">
-                <img src="img/faq-yleista.webp" alt="Konsultti vastaa asiakkaan kysymyksiin modernissa neuvotteluhuoneessa" class="responsive-image" loading="lazy">
-            </div>
-            <div class="col-lg-6">
+            <div class="col-lg-8 mx-auto">
                 <span class="section-badge">Yleisiä kysymyksiä</span>
                 <h2 class="section-title">Perustiedot palveluistamme</h2>
                 
@@ -131,10 +128,7 @@ include 'partials/header.php';
 <section class="faq-section section-padding section-full-height bg-surface" id="services">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 order-lg-2 fade-in-section">
-                <img src="img/faq-palvelut.webp" alt="Eri palveluvaihtoehtoja esiteltynä interaktiivisessa muodossa" class="responsive-image" loading="lazy">
-            </div>
-            <div class="col-lg-6 order-lg-1">
+            <div class="col-lg-8 mx-auto">
                 <span class="section-badge">Palveluihin liittyvät kysymykset</span>
                 <h2 class="section-title">Yksityiskohtaisempaa tietoa palveluista</h2>
                 
@@ -209,10 +203,7 @@ include 'partials/header.php';
 <section class="faq-section section-padding section-full-height" id="pricing">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 fade-in-section">
-                <img src="img/faq-hinnoittelu.webp" alt="Hinnoittelumalli esitettynä selkeästi taulukkomuodossa" class="responsive-image" loading="lazy">
-            </div>
-            <div class="col-lg-6">
+            <div class="col-lg-8 mx-auto">
                 <span class="section-badge">Hinnoitteluun liittyvät kysymykset</span>
                 <h2 class="section-title">Kustannukset ja maksutavat</h2>
                 
@@ -287,10 +278,7 @@ include 'partials/header.php';
 <section class="faq-section section-padding section-full-height bg-surface" id="process">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 order-lg-2 fade-in-section">
-                <img src="img/faq-prosessi.webp" alt="Projektin eteneminen visualisoituna vaiheittain" class="responsive-image" loading="lazy">
-            </div>
-            <div class="col-lg-6 order-lg-1">
+            <div class="col-lg-8 mx-auto">
                 <span class="section-badge">Prosessiin liittyvät kysymykset</span>
                 <h2 class="section-title">Miten yhteistyö käytännössä sujuu</h2>
                 
@@ -366,10 +354,7 @@ include 'partials/header.php';
 <section class="faq-section section-padding section-full-height" id="results">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 fade-in-section">
-                <img src="img/faq-tulokset.webp" alt="Onnistuneita tuloksia esittävät graafit ja mittarit" class="responsive-image" loading="lazy">
-            </div>
-            <div class="col-lg-6">
+            <div class="col-lg-8 mx-auto">
                 <span class="section-badge">Tuloksiin liittyvät kysymykset</span>
                 <h2 class="section-title">Mitä voit odottaa yhteistyöstä</h2>
                 

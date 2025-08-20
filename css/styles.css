@@ -201,7 +201,7 @@ body {
 }
 
 .nav-link {
-    color: var(--white) !important;
+    color: var(--dark) !important;
     font-weight: 500;
     padding: 0.5rem 1rem !important;
     position: relative;
