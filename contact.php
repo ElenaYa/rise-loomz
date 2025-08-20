@@ -23,7 +23,7 @@ include 'partials/header.php';
 <section class="contact-form-section section-padding section-full-height">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-12 mx-auto">
                 <div class="contact-form-card fade-in-section">
                     <div class="row">
                         <div class="col-lg-6">
@@ -109,7 +109,7 @@ include 'partials/header.php';
             <div class="col-lg-4 mb-4 fade-in-section">
                 <div class="contact-info-card">
                     <div class="contact-icon">
-                        <div class="icon-bg icon-primary"></div>
+                        <div class="icon-bg icon-primary"><i class="bi bi-envelope"></i></div>
                     </div>
                     <h4>Sähköposti</h4>
                     <p>Vastaamme viesteihin arkisin 24 tunnin sisällä.</p>
@@ -122,7 +122,7 @@ include 'partials/header.php';
             <div class="col-lg-4 mb-4 fade-in-section">
                 <div class="contact-info-card">
                     <div class="contact-icon">
-                        <div class="icon-bg icon-accent"></div>
+                        <div class="icon-bg icon-accent"><i class="bi bi-clock-history"></i></div>
                     </div>
                     <h4>Vastausaika</h4>
                     <p>Pyrimme vastaamaan kaikkiin yhteydenottoihin nopeasti.</p>
@@ -133,7 +133,7 @@ include 'partials/header.php';
             <div class="col-lg-4 mb-4 fade-in-section">
                 <div class="contact-info-card">
                     <div class="contact-icon">
-                        <div class="icon-bg icon-support"></div>
+                        <div class="icon-bg icon-support"><i class="bi bi-geo-alt"></i></div>
                     </div>
                     <h4>Toiminta-alue</h4>
                     <p>Palvelemme yrityksiä kaikkialla Suomessa ja etänä maailmanlaajuisesti.</p>
@@ -143,55 +143,6 @@ include 'partials/header.php';
         </div>
     </div>
 </section>
-
-<!-- Meeting Options -->
-<section class="meeting-options section-padding section-full-height">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 fade-in-section">
-                <img src="img/tapaaminen-video.webp" alt="Videokokous konsultin kanssa asiakaspalvelun kehittämisestä" class="responsive-image" loading="lazy">
-            </div>
-            <div class="col-lg-6 fade-in-section">
-                <span class="section-badge">Tapaamisvaihtoehdot</span>
-                <h2 class="section-title">Valitse sinulle sopiva tapa tavata</h2>
-                <p class="section-description">
-                    Tarjoamme joustavia tapaamismudollisuuksia, jotka sopivat aikatauluunne ja tarpeisiinne.
-                </p>
-                
-                <div class="meeting-options-grid">
-                    <div class="meeting-option">
-                        <div class="meeting-icon">💻</div>
-                        <h5>Videokokous</h5>
-                        <p>Nopea ja tehokas tapa keskustella projektista. Voimme jakaa näyttöä ja esitellä ratkaisuja reaaliajassa.</p>
-                        <span class="meeting-duration">Kesto: 30-60 min</span>
-                    </div>
-                    
-                    <div class="meeting-option">
-                        <div class="meeting-icon">🏢</div>
-                        <h5>Tapaaminen toimistollanne</h5>
-                        <p>Vierailemme toimistollanne ja tutustumme ympäristöönne. Hyvä vaihtoehto isommille projekteille.</p>
-                        <span class="meeting-duration">Kesto: 1-2 tuntia</span>
-                    </div>
-                    
-                    <div class="meeting-option">
-                        <div class="meeting-icon">☕</div>
-                        <h5>Epävirallinen kahvitapaaminen</h5>
-                        <p>Rentoutunut keskustelu kahvilan tai työtilamme yhteydessä. Sopii alkukartoitukseen.</p>
-                        <span class="meeting-duration">Kesto: 45-90 min</span>
-                    </div>
-                    
-                    <div class="meeting-option">
-                        <div class="meeting-icon">📞</div>
-                        <h5>Puhelinkeskustelu</h5>
-                        <p>Nopea tapa kartoittaa tarpeita ja sopia jatkotoimenpiteistä. Sopii kiireisille aikatauluille.</p>
-                        <span class="meeting-duration">Kesto: 15-30 min</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- FAQ Preview -->
 <section class="faq-preview section-padding section-full-height bg-surface">
     <div class="container">
@@ -245,61 +196,6 @@ include 'partials/header.php';
                 
                 <div class="text-center mt-4">
                     <a href="faq.php" class="btn btn-outline-primary">Katso kaikki kysymykset</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Response Timeline -->
-<section class="response-timeline section-padding section-full-height">
-    <div class="container">
-        <div class="text-center mb-5 fade-in-section">
-            <span class="section-badge">Mitä tapahtuu seuraavaksi</span>
-            <h2 class="section-title">Yhteydenottosi jälkeen</h2>
-            <p class="section-description">
-                Tässä on mitä voit odottaa yhteydenottosi jälkeen
-            </p>
-        </div>
-        
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <div class="timeline-steps fade-in-section">
-                    <div class="timeline-step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h5>Vastaamme nopeasti</h5>
-                            <p>Saat vahvistuksen yhteydenotostasi välittömästi ja henkilökohtaisen vastauksen 24 tunnin sisällä.</p>
-                            <span class="timeline-duration">< 24 tuntia</span>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h5>Alkukartoitus</h5>
-                            <p>Järjestämme maksuttoman keskustelun, jossa kartoitamme tarpeitanne ja haasteita syvemmin.</p>
-                            <span class="timeline-duration">30-60 min kokous</span>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h5>Ehdotus ja tarjous</h5>
-                            <p>Laadimme räätälöidyn ehdotuksen ratkaisuista ja selkeän tarjouksen mahdollisesta yhteistyöstä.</p>
-                            <span class="timeline-duration">2-5 arkipäivää</span>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-step">
-                        <div class="step-number">4</div>
-                        <div class="step-content">
-                            <h5>Projektin aloitus</h5>
-                            <p>Kun sopimus on tehty, aloitamme työn nopeasti ja sovimme yksityiskohtaisen aikataulun.</p>
-                            <span class="timeline-duration">1-2 viikossa</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
